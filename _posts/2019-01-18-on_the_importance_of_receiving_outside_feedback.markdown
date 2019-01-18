@@ -1,12 +1,12 @@
 ---
 layout: post
 title:      "On the importance of receiving outside feedback"
-date:       2019-01-18 13:15:18 +0000
+date:       2019-01-18 08:15:18 -0500
 permalink:  on_the_importance_of_receiving_outside_feedback
 ---
 
 
-Last week I went to Paris to visit my family. My dad has always been pretty interested in technology. I have memories as a child of him spending weekends trying to install whatever operationg system on his computer before at a time YouTube tutorials and Stack Overflow were not exactly available. If he does not know specifically how to develop an application, he has more than enough knowledge to understand to concepts and content of my portfolio projects. 
+Last week I went to Paris to visit my family. My dad has always been pretty interested in technology. I have memories as a child of him spending weekends trying to install whatever operationg system on his computer, at a time YouTube tutorials and Stack Overflow were not exactly common. If he does not know specifically how to develop an application, he has more than enough knowledge to understand to concepts and content of my portfolio projects. 
 
 Since we often talk about how things are going with my lessons, labs and projects, we sat down together and I showed him my Farmers Markets CLI, my very first project. I explained the general idea, we went through the whole structure of my gem and through the different classes it is using. So far so good. 
 
