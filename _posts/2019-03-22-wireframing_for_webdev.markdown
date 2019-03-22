@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Wireframing for WebDev"
-date:       2019-03-22 11:44:25 +0000
+date:       2019-03-22 07:44:26 -0400
 permalink:  wireframing_for_webdev
 ---
 
@@ -32,4 +32,4 @@ There are 4 golden rules in wireframing for development:
 
 <br>
 
-Thank you for ready and I hope it helps you plan your HTML better!
+Thank you for reading and I hope it helps you plan your HTML better!
