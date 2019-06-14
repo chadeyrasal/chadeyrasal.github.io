@@ -98,7 +98,7 @@ I implemented the **Facebook** authentication without issues. The **Twitter** au
 
 **The app must have nested resources including a nested new route and a nested index / show route**
 
-The nesting part was really fun. I buit most of it using **Behavior Driven Development**. Every single line of code I wrote, I tested in the browser. I took the time to build a good enough dataset to make the BDD possible. So the whole process was quite smooth. 
+The nesting part was really fun. I built most of it using **Behavior Driven Development**. Every single line of code I wrote, I tested in the browser. I took the time to build a good enough dataset to make the BDD possible. So the whole process was quite smooth. 
 
 The choice for the **show** / **index** nested resources was instinctive and did not require much thinking. The **new** nested resource required a little bit more thinking. The nested new resource was to create a new bicycle nested under a specific user. It did not seem like an obvious choice and nothing else did. Moving further into writing my app, a very simple one came along. Since the link to book a bicycle for a trip is on the bicycle show page and the trip belongs to a bicycle, I nested the new trip form under the bicycle show page. It works really well with the logic of the app. 
 
@@ -110,7 +110,7 @@ I ended up nesting way more resources than just the required new and show / inde
 
 This is literally what I asked myself after a few days of working on the project. I had so far always managed to work out a plan in my head and abstract it enough not to have to go back to basics: 
 * A pen and paper
-* Lists of the required features and of the extra features taht would be nice to implement
+* Lists of the required features and of the extra features that would be nice to implement
 * Drawings of the database tables and their relationships
 * Drawings of each page of the web app, what I wanted it to look like, what kind of data I wanted to display and what links / buttons made sense for the users
 
