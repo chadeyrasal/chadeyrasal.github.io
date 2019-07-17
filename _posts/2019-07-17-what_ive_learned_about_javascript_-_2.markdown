@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "What I've learned about JavaScript - 2"
-date:       2019-07-17 13:28:32 +0000
+date:       2019-07-17 09:28:33 -0400
 permalink:  what_ive_learned_about_javascript_-_2
 ---
 
@@ -57,11 +57,17 @@ N.B. The scope chain only goes in one direction.
 When the JS code runs in the browser, the engine actually makes two distinct passes over our code: 
 
 - The **compilation** phase: in this phase the engione goes through our code line by line: 
+
   - When it reaches a **variable** declaration, it allocates memory and sets up a reference to the variable's identifier
+
   - When it reaches a **function** delcration it does 3 things: 
-   - Allocates **memory** and sets up a **reference** to the identifier
-   - Creates a new **execution context** with a new scope
-   - Adds a **reference** to the parent scope to the **scope chain**
+
+      - Allocates **memory** and sets up a **reference** to the identifier
+
+      - Creates a new **execution context** with a new scope
+
+      - Adds a **reference** to the parent scope to the **scope chain**
+
 - The **execution** phase: there again it goes through the code line by line but this time it **runs** our codes, assigning values to variables and calling functions. One of the tasks is **matching** the identifiers with the corresponding values stored in memory. 
 
 
@@ -105,7 +111,9 @@ function myFunc () {
 With the above syntax - the behaviour remains identical - what happens is clearer: by the time the engine reaches the ```console.log()``` part, the variable is still assigned ```undefined```. 
 
 There are two ways of avoiding **variable hoisting** by the JS engine: 
+
 - If for some reason you have to declare your variable with ```var```, juste declare everything at the **top of the scope**. 
+
 - Just **do not use ```var```**. Although variables declared with ```let```  or ```const``` do technically get hoisted, the JS engine does not allow them to be referenced before they've been initialised. 
 
 
@@ -184,9 +192,11 @@ greeting;
 **Replace Elements**: 
 
 - ```.splice()``` with **3** arguments: 
+
  - First argument: **index** at which to start
 
  - Second argument: **number** of array elements to remove
+
  - Rest of the arguments: items to be **inserted** in the array to replace the elements that were removed. You can insert **as many elements** as you want to replace the removed element(s). There can even be **0** elements removed, in this case ```.splice()``` returns an empty array. 
 
 - **Computed Member Access Operator**: it is simpler than ```.splice()``` for just one element but it is still **destructive**. 
@@ -227,6 +237,7 @@ Objects can be:
 - Empty: ```{}```
 
 - Have a single key-value pair: ```{key: value}```
+
 - Multiple key-value pairs: 
 
  ```
@@ -242,6 +253,7 @@ There are two ways of **accessing** data in an object:
 - The **dot notation**: ```object.propertyName;```. When accessing an **non-existent property** the dot notation will return ```undefined```
 
 - The **bracket notation** - or computer member access operator: ```object['propertyName'];```. Should be used in 2 situations: 
+
  - With **non-standard keys**: if you need to use a non-standard string as a key, ie a string that does not follow the same naming **conventions** as functions and variables - camel case, starts with lowercase letter, no space or punctuation.
 
  - To access proprties **dynamically**: we can place any expression in the brackets, JS will **compute** its value to find out which property to access. The real strength of the bracket notation is its ability to compute the **value of variables**. It is also true during the **creation** of a new object, if using square brackets for the property name. 
@@ -334,5 +346,9 @@ Now, what happens if we add a new property that has a key of 0?JS creates a new 
 
 So as general rules: 
 - For **accessing** elements in arrays use **integers**
+
 - Be careful with setting **object-style** properties on arrays
+
 - Remember that **all object keys**, incl. array indexes are **strings** (this will be useful when we start iterating over objects)
+
+
